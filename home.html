@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Básico -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO principal -->
+  <title>EspressoData | Dashboards para cafeterías en Looker Studio</title>
+  <meta name="description" content="EspressoData crea dashboards listos para cafeterías usando Looker Studio. Entiende tus ventas, productos más rentables, horarios pico y costos en un solo panel." />
+  <meta name="keywords" content="cafetería, dashboards, datos, looker studio, analítica, ventas, punto de venta, reportes" />
+  <link rel="canonical" href="https://www.ejemplo-espresodata.com/" />
+
+  <!-- Open Graph / Redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EspressoData | Dashboards para cafeterías" />
+  <meta property="og:description" content="Dashboards listos para cafeterías: ventas, productos, horarios y costos en un solo lugar." />
+  <meta property="og:url" content="https://www.ejemplo-espresodata.com/" />
+  <meta property="og:image" content="https://www.ejemplo-espresodata.com/assets/og-espresso-data.jpg" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EspressoData | Dashboards para cafeterías" />
+  <meta name="twitter:description" content="Conecta tus datos y entiende tu cafetería en un solo dashboard." />
+  <meta name="twitter:image" content="https://www.ejemplo-espresodata.com/assets/og-espresso-data.jpg" />
+
+  <!-- Favicon (ajusta la ruta) -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="./css/home.css">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+
+  <!-- JSON-LD (ajusta URL, nombre y contacto) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "EspressoData",
+    "operatingSystem": "Web",
+    "applicationCategory": "BusinessApplication",
+    "description": "Dashboards listos para cafeterías usando Looker Studio.",
+    "url": "https://www.ejemplo-espresodata.com/",
+    "creator": {
+      "@type": "Organization",
+      "name": "EspressoData"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "MXN",
+      "availability": "https://schema.org/PreOrder"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+      <!-- LOGO + NOMBRE -->
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#inicio">
+        <img
+          src="./img/logoImage.png"
+          alt="EspressoData logo"
+          class="logo-img"
+        />
+        <span>
+          Espresso<span class="text-warning">Data</span>
+        </span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Mostrar menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#problema">Problema</a></li>
+          <li class="nav-item"><a class="nav-link" href="#que-es">Qué es</a></li>
+          <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+
+        <a href="./demo.html" class="btn btn-warning fw-semibold px-4">Ver demo</a>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="hero-badge mb-3">
+              Dashboards para cafeterías
+            </div>
+            <h1 class="display-5 fw-bold mb-3">
+              Entiende tu <span>cafetería</span> en un solo dashboard
+            </h1>
+            <p class="lead mb-4">
+              Visualiza ventas, horarios y productos clave para tomar mejores decisiones <b>en minutos</b>, no en semanas.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2 mb-4">
+              <a href="#contacto" class="btn btn-warning btn-lg fw-semibold">
+                Ver demo
+              </a>
+              <a href="#como-funciona" class="btn btn-outline-light btn-lg">
+                Ver cómo funciona
+              </a>
+            </div>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <span class="icon-bullet"></span>Visualiza tus productos más vendidos y los que casi no se mueven.
+              </li>
+              <li class="mb-2">
+                <span class="icon-bullet"></span>Detecta horas pico y días flojos en segundos.
+              </li>
+              <li class="mb-2">
+                <span class="icon-bullet"></span>Toma decisiones sin ser experto en Excel.
+              </li>
+            </ul>
+            <p class="mt-3 mb-0 text-secondary">
+              Funciona con datos de tu punto de venta o de hojas de cálculo.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <!-- Aquí iría un mockup o screenshot de Looker Studio -->
+            <!-- Imagen -->
+            <div class="hero-image">
+              <img src="./img/dashboard-img.png" alt="Ejemplo de dashboard para cafeterías">
+            </div>
+          </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section id="problema" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <h2 class="h1 mb-3">Administrar una cafetería ya es difícil. Hacer números no debería serlo.</h2>
+            <p>
+              La mayoría de las cafeterías registran sus ventas en un sistema de punto de venta o en Excel, pero casi nadie revisa los datos a fondo.
+              Los reportes son complicados, están desordenados o se quedan olvidados en una carpeta.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5 mb-3">Problemas típicos que vemos en cafeterías:</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                No sabes realmente qué productos dejan más utilidad.
+              </li>
+              <li class="list-group-item">
+                No tienes claro qué días y horarios son los más fuertes.
+              </li>
+              <li class="list-group-item">
+                Te cuesta controlar el costo de los insumos.
+              </li>
+              <li class="list-group-item">
+                Tomas decisiones “al tanteo” porque no hay un panel claro.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ ES -->
+    <section id="que-es" class="section-padding bg-soft">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="h1 mb-3">EspressoData: dashboards listos para cafeterías</h2>
+            <p>
+              Tú sigues trabajando como siempre.
+              Nosotros conectamos tus datos y te damos una vista clara de tu negocio.
+            </p>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2">✅ Dashboards listos para usar, pensados para cafeterías.</li>
+              <li class="mb-2">✅ Integración con tu sistema de ventas o con hojas de cálculo.</li>
+              <li class="mb-2">✅ Sin instalar nada: solo necesitas tu navegador.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Dueños de cafeterías</h3>
+                    <p class="mb-0 small">Entiende tu negocio sin ser analista de datos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Gerentes y socios</h3>
+                    <p class="mb-0 small">Reportes claros para revisar resultados juntos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Cadenas pequeñas</h3>
+                    <p class="mb-0 small">Comparativos por sucursal sin complicaciones técnicas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Consultores</h3>
+                    <p class="mb-0 small">Dashboards listos para tus clientes de café y alimentos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h1 mb-3">De datos sueltos a decisiones claras</h2>
+          <p class="lead">
+            Todo lo que un dueño de cafetería necesita ver en un solo lugar.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5">Ventas por producto</h3>
+                <p class="mb-0">
+                  Identifica tus best sellers, productos que no se mueven y oportunidades para combos y promociones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5">Horas pico y horarios flojos</h3>
+                <p class="mb-0">
+                  Ve qué días y a qué horas vendes más para ajustar personal, insumos y horarios de apertura.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5">Costos y márgenes</h3>
+                <p class="mb-0">
+                  Conecta tus costos e insumos para entender qué tan rentable es cada bebida o alimento.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5">Reportes para el equipo</h3>
+                <p class="mb-0">
+                  Comparte el dashboard con socios o gerentes, sin mandar archivos pesados ni versiones distintas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+<section id="como-funciona" class="section-padding bg-soft">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="h1 mb-2">¿Cómo funciona EspressoData?</h2>
+      <p class="lead mb-1">MODELO DE NEGOCIO: <strong>“Asesoría + Dashboard”</strong></p>
+      <p class="text-muted">Te acompañamos desde cero: diagnóstico, registro de datos y dashboard mensual.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- FASE 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">🥇 FASE 1</span>
+            <h3 class="h5 mb-2">Diagnóstico (sin datos)</h3>
+            <p class="small mb-3">
+              Ofrecemos una consultoría inicial donde entendemos cómo funciona hoy tu cafetería.
+            </p>
+            <ul class="small mb-0">
+              <li>Revisamos cómo registras ventas hoy.</li>
+              <li>Definimos qué métricas importan para tu cafetería.</li>
+              <li>Te proponemos el dashboard ideal.</li>
+            </ul>
+            <p class="small mt-3 mb-0 text-muted">
+              Esta fase se cobra como <strong>paquete básico de diagnóstico</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FASE 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">🥈 FASE 2</span>
+            <h3 class="h5 mb-2">Implementación de registro de datos</h3>
+            <p class="small mb-3">
+              Si no tienes datos estructurados, te ayudamos a empezar a generarlos de forma sencilla.
+            </p>
+            <ul class="small mb-0">
+              <li>Creamos una plantilla simple.</li>
+              <li>Te enseñamos qué registrar y cómo.</li>
+              <li>Dejamos todo listo para el análisis.</li>
+            </ul>
+            <p class="small mt-3 mb-0 text-muted">
+              Esta fase también se cobra como implementación inicial.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FASE 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">🥉 FASE 3</span>
+            <h3 class="h5 mb-2">Dashboard mensual</h3>
+            <p class="small mb-3">
+              Una vez que ya registras tus datos, nosotros nos encargamos del análisis recurrente.
+            </p>
+            <ul class="small mb-0">
+              <li>Analizamos tus datos reales.</li>
+              <li>Actualizamos y mejoramos el dashboard..</li>
+              <li>Te mostramos qué está funcionando y qué no.</li>
+            </ul>
+            <p class="small mt-3 mb-0 text-muted">
+              Pago <strong>mensual</strong> o por <strong>proyecto</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <section class="features">
+  <div class="features-container">
+    <h2>Lo que podrás ver en tus dashboards</h2>
+    <p class="features-subtitle">
+      Ejemplos de vistas claras para tomar mejores decisiones en tu cafetería.
+    </p>
+
+    <div class="features-grid">
+
+      <!-- Card 1 -->
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="./img/TopProductos.png" alt="Dashboard de productos">
+        </div>
+        <div class="feature-content">
+          <h3>Visión global</h3>
+          <p>
+            Ventas diarias, ticket promedio y número de órdenes en una sola vista.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="./img/TopProductos.png" alt="Dashboard de productos">
+        </div>
+        <div class="feature-content">
+          <h3>Productos</h3>
+          <p>
+            Identifica tus productos estrella y los que casi no se venden.
+          </p>
+        </div>
+      </div>
+
+       <!-- Card 3 -->
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="./img/TopProductos.png" alt="Horas pico por día y horario">
+        </div>
+        <div class="feature-content">
+           <h3>Horarios y días</h3>
+          <p>
+            Detecta horas pico y días flojos para ajustar personal y promociones.
+          </p>
+        </div>
+      </div>
+
+       <!-- Card 4 -->
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="./img/TopProductos.png" alt="Comparativo entre sucursales">
+        </div>
+        <div class="feature-content">
+           <h3>Sucursales</h3>
+          <p>
+           Compara sucursales y encuentra oportunidades de mejora.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- PLANES -->
+<section id="planes" class="section-padding bg-soft">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="h1 mb-3">Paquetes de EspressoData</h2>
+      <p class="lead">
+        Combinamos asesoría + plantillas + dashboards para acompañarte desde cero hasta la analítica mensual.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- PAQUETE 1 — Arranque de Datos  -->
+      <div class="col-md-6 col-lg-4">
+        <div class="plan-card p-4 h-100 d-flex flex-column position-relative">
+
+          <!-- Badge promoción -->
+          <div class="promo-badge">Promoción Inicio 2026</div>
+
+          <h3 class="h4 mb-1">PAQUETE 1 — “Arranque de Datos”</h3>
+          <p class="text-muted mb-3">
+            Ideal para cafeterías que aún no trabajan con datos o registros claros.
+          </p>
+
+          <!-- Precio -->
+          <div class="mb-3">
+            <span class="text-muted text-decoration-line-through small">
+              $1,299 MXN
+            </span>
+            <div class="h5 fw-bold mb-0">
+              💵 $999 MXN
+              <span class="fs-6 text-muted">pago único</span>
+            </div>
+          </div>
+
+          <!-- Beneficios -->
+          <ul class="list-unstyled mb-4 small">
+            <li class="plan-feature mb-2">
+              <span>✔</span> Diagnóstico del negocio (FASE 1).
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Plantilla de registro de ventas (Excel / Google Sheets).
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Lista de métricas recomendadas para tu cafetería.
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Capacitación de 30 minutos por videollamada.
+            </li>
+          </ul>
+
+          <!-- CTA -->
+          <div class="mt-auto">
+            <a href="#contacto" class="btn btn-dark w-100">
+              Quiero arrancar con datos
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAQUETE 2 — Tu Primer Dashboard -->
+      <div class="col-md-6 col-lg-4">
+        <div class="plan-card p-4 h-100 d-flex flex-column border-2 border-warning position-relative plan-featured">
+
+          <!-- Badge promoción -->
+          <div class="promo-badge">Promoción Inicio 2026</div>
+
+          <h3 class="h4 mb-1">PAQUETE 2 — “Tu Primer Dashboard”</h3>
+          <p class="text-muted mb-3">
+            Para cafeterías que ya cuentan con al menos 1 mes de registros.
+          </p>
+
+          <!-- Precio -->
+          <div class="mb-3">
+            <span class="text-muted text-decoration-line-through small">
+              $3,999 MXN
+            </span>
+            <div class="h5 fw-bold mb-0">
+              💵 $2,499 MXN
+              <span class="fs-6 text-muted">pago único</span>
+            </div>
+          </div>
+
+          <!-- Beneficios -->
+          <ul class="list-unstyled mb-4 small">
+            <li class="plan-feature mb-2">
+              <span>✔</span> Todo lo incluido en el <strong>Paquete 1</strong>.
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Limpieza y preparación de hasta 1 mes de datos
+              (ventas y productos).
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Dashboard profesional en Looker Studio
+              con métricas clave de cafeterías.
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Reunión de entrega y explicación del dashboard.
+            </li>
+          </ul>
+
+          <!-- CTA -->
+          <div class="mt-auto">
+            <a href="#contacto" class="btn btn-warning w-100 fw-semibold">
+              Quiero mi primer dashboard
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAQUETE 3 — Dashboard Mensual + Consultoría -->
+      <div class="col-md-6 col-lg-4">
+        <div class="plan-card p-4 h-100 d-flex flex-column position-relative">
+
+          <!-- Badge promoción -->
+          <div class="promo-badge">Promoción Inicio 2026</div>
+
+          <h3 class="h4 mb-1">PAQUETE 3 — “Dashboard mensual + consultoría”</h3>
+          <p class="text-muted mb-3">
+            Para cafeterías que quieren seguimiento mensual y decisiones con datos (sin complicarse).
+          </p>
+
+          <!-- Precio -->
+          <div class="mb-3">
+            <span class="text-muted text-decoration-line-through small">
+              $1,399 MXN / mes
+            </span>
+            <div class="h5 fw-bold mb-0">
+              💵 $999 MXN
+              <span class="fs-6 text-muted">/ mes</span>
+            </div>
+            <div class="small text-muted mt-1">
+              Precio de inicio 2026 (se mantiene mientras continúe el servicio)
+            </div>
+          </div>
+
+          <!-- Beneficios -->
+          <ul class="list-unstyled mb-4 small">
+            <li class="plan-feature mb-2">
+              <span>✔</span> Actualización mensual del dashboard con tus datos reales.
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Revisión mensual de resultados (30 min por videollamada).
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Te mostramos qué está funcionando y qué no (acciones recomendadas).
+            </li>
+            <li class="plan-feature mb-2">
+              <span>✔</span> Ajustes menores incluidos (filtros, orden, etiquetas y mejoras de vista).
+            </li>
+          </ul>
+
+          <!-- CTA -->
+          <div class="mt-auto">
+            <a href="#contacto" class="btn btn-dark w-100 fw-semibold">
+              Quiero seguimiento mensual
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+  <div class="faq-wrap">
+    <header class="faq-head">
+      <h2>Preguntas frecuentes</h2>
+      <p>Respuestas claras para que decidas rápido.</p>
+    </header>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>
+          <span>¿Necesito saber de análisis de datos?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-content">
+          <p>No. Tú solo registras o exportas tus ventas. Nosotros conectamos los datos y te entregamos el dashboard listo, explicado y con recomendaciones.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>¿Con qué sistemas de ventas funciona?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-content">
+          <p>Funciona con Excel/Google Sheets y con exportaciones de la mayoría de puntos de venta (CSV/Excel). Si tu sistema permite exportar ventas y productos, podemos integrarlo.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>¿Cada cuándo se actualizan los datos?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-content">
+          <p>Depende del paquete. En “Tu Primer Dashboard” se entrega con el periodo acordado. En “Dashboard mensual + consultoría” lo actualizamos cada mes con tus datos reales (o cuando nos compartas el archivo/exportación).</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>¿El dashboard es personalizado? ¿Qué incluye y qué no?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-content">
+          <p>Es una plantilla estándar para cafeterías, adaptada a tus datos (productos, categorías, fechas y nombre del negocio). Cambios estructurales (métricas nuevas, dashboards extra o módulos como empleados) se cotizan por separado.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>¿Cuánto tardan en entregarlo?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-content">
+          <p>Normalmente 2–5 días hábiles después de recibir tus datos (Excel/CSV) y confirmar el periodo a analizar. Si ya tienes todo ordenado, puede ser más rápido.</p>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="faq-cta">
+      <p>¿Tienes otra pregunta? Te respondo por WhatsApp.</p>
+      <a class="btn-faq" href="#contacto">Preguntar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACTO / CTA FINAL -->
+    <section class="cta-whatsapp" id="contacto">
+  <div class="cta-wrap">
+
+    <!-- Texto -->
+    <div class="cta-copy">
+      <h2>¿Listo para entender tu cafetería con claridad?</h2>
+      <p class="cta-lead">
+        Deja de adivinar con tus números. Empieza a ver tu cafetería como lo que es:
+        un negocio que puede crecer con datos claros.
+      </p>
+
+      <ul class="cta-bullets">
+        <li>✅ Te muestro un dashboard de ejemplo en minutos</li>
+        <li>✅ Te digo cuál paquete te conviene según tus datos</li>
+        <li>✅ Si no tienes datos, te explico cómo arrancar</li>
+      </ul>
+
+      <p class="cta-note">
+        Respuesta típica en menos de <strong>30 minutos</strong> (horario laboral).
+      </p>
+    </div>
+
+    <!-- Caja -->
+    <div class="cta-card">
+      <h3>Escríbenos por WhatsApp</h3>
+      <p class="cta-card-sub">Cuéntanos un poco y te respondemos por WhatsApp.</p>
+
+      <div class="cta-grid">
+        <label>
+          <span>Nombre</span>
+          <input id="waName" type="text" placeholder="Tu nombre" />
+        </label>
+
+        <label>
+          <span>Nombre de la cafetería</span>
+          <input id="waCafe" type="text" placeholder="Cafetería Espresso Central" />
+        </label>
+
+        <label class="full">
+          <span>¿Qué te gustaría analizar?</span>
+          <textarea id="waGoal" rows="4" placeholder="Ventas por producto, horarios, costos, etc."></textarea>
+        </label>
+      </div>
+
+      <button class="btn-wa" id="waBtn" type="button">
+        💬 Escribir por WhatsApp
+      </button>
+
+      <p class="cta-legal">
+        Al continuar, se abrirá WhatsApp con un mensaje prellenado.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-1">
+            © <span id="year"></span> EspressoData. Todos los derechos reservados.
+          </p>
+          <p class="mb-0">
+            Dashboards para cafeterías usando Looker Studio.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-decoration-none text-secondary me-3">Aviso de privacidad</a>
+          <a href="#" class="text-decoration-none text-secondary">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Año dinámico en el footer -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    (function () {
+      // ✅ CAMBIA ESTE NÚMERO
+      // Formato: 52 + tu número (10 dígitos). Ej: 5215512345678
+      const PHONE = "525643515984";
+
+      const $ = (id) => document.getElementById(id);
+
+      function buildMessage() {
+        const name = $("waName").value.trim();
+        const cafe = $("waCafe").value.trim();
+        const goal = $("waGoal").value.trim();
+
+        const lines = [
+          "Hola, quiero una demo de EspressoData ☕📊",
+          name ? `Nombre: ${name}` : null,
+          cafe ? `Cafetería: ${cafe}` : null,
+          goal ? `Quiero analizar: ${goal}` : "Quiero analizar: ventas, horarios, productos y ticket promedio.",
+          "",
+          "¿Me puedes decir cuál paquete me conviene y cómo conectar mis datos?"
+        ].filter(Boolean);
+
+        return lines.join("\n");
+      }
+
+      $("waBtn").addEventListener("click", function () {
+        const msg = buildMessage();
+        const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+    })();
+  </script>
+
+</body>
+</html>
