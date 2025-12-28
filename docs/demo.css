@@ -4,6 +4,18 @@
                   linear-gradient(180deg, #0b1220 0%, #070b12 100%);
       color:#e5e7eb;
     }
+    .logo-img{
+      height: 50px; 
+      width: auto;
+      background: transparent !important;
+      border-radius: 0;
+      padding: 0;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,.55));
+    }
+
+    .logo-img {
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
+    }
     .navbar{
       backdrop-filter: blur(10px);
       background: rgba(15, 23, 42, 0.7) !important;

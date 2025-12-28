@@ -7,7 +7,7 @@
 
   <!-- Bootstrap (si ya lo cargas en tu proyecto, usa tu misma ruta) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/demo.css">
+  <link rel="stylesheet" href="demo.css">
 </head>
 
 <body>
@@ -15,13 +15,21 @@
   <!-- Header -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="./home.html">
-        Espresso<span class="text-warning">Data</span>
+      <!-- LOGO + NOMBRE -->
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="home.html">
+        <img
+          src="logoImage.png"
+          alt="EspressoData logo"
+          class="logo-img"
+        />
+        <span>
+          Espresso<span class="text-warning">Data</span>
+        </span>
       </a>
 
       <div class="ms-auto d-flex gap-2">
-        <a href="./home.html#planes" class="btn btn-outline-light btn-sm fw-semibold">Ver planes</a>
-        <a href="./home.html#contacto" class="btn btn-warning btn-sm fw-semibold">WhatsApp</a>
+        <a href="home.html#planes" class="btn btn-outline-light btn-sm fw-semibold">Ver planes</a>
+        <a href="home.html#contacto" class="btn btn-warning btn-sm fw-semibold">WhatsApp</a>
       </div>
     </div>
   </nav>
@@ -40,13 +48,13 @@
           </p>
 
           <div class="d-flex flex-wrap gap-2 mb-3">
-            <a class="btn btn-warning fw-semibold" href="./home.html#contacto">
+            <a class="btn btn-warning fw-semibold" href="home.html#contacto">
               💬 Quiero mi dashboard
             </a>
-            <a class="btn btn-outline-light fw-semibold" href="./home.html#planes">
+            <a class="btn btn-outline-light fw-semibold" href="home.html#planes">
               Ver planes
             </a>
-            <a class="btn btn-outline-light fw-semibold" href="./home.html#como-funciona">
+            <a class="btn btn-outline-light fw-semibold" href="home.html#como-funciona">
               Cómo funciona
             </a>
           </div>
@@ -84,8 +92,8 @@
           ¿Quieres que lo adaptemos a tu cafetería? Escríbenos y te decimos qué paquete te conviene.
         </p>
         <div class="d-flex gap-2">
-          <a href="./home.html#contacto" class="btn btn-warning fw-semibold">✅ Quiero mi dashboard</a>
-          <a href="./home.html" class="btn btn-outline-light fw-semibold">Volver al inicio</a>
+          <a href="home.html#contacto" class="btn btn-warning fw-semibold">✅ Quiero mi dashboard</a>
+          <a href="home.html" class="btn btn-outline-light fw-semibold">Volver al inicio</a>
         </div>
       </div>
 
